@@ -1,0 +1,26 @@
+{
+	"name": "dsh-zcode-design-skills",
+	"description": "Loads zcode design skills (GSAP ×8, react-bits, design-taste-frontend) into DeepSeek Harness agents.",
+	"version": "0.1.0",
+	"type": "module",
+	"main": "lib/index.js",
+	"exports": {
+		".": "./lib/index.js",
+		"./locale/*.json": "./locale/*.json",
+		"./icon": "./icon.svg"
+	},
+	"files": [
+		"lib/index.js",
+		"cordis.patch.yml",
+		"locale/*.json",
+		"icon.svg",
+		"assets"
+	],
+	"icon": "./icon.svg",
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		}
+	},
+	"license": "MIT"
+}
